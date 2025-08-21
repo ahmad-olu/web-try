@@ -6,7 +6,7 @@
         "packages/*"
     ],
     "scripts": {
-        "dev:saleOff": "pnpm --filter saleoff run dev --open",
+        "dev:saleoff": "pnpm --filter saleoff run dev --open",
         "dev:stately": "pnpm --filter stately run dev --open",
         "build": "pnpm -r build"
     },
