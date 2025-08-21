@@ -1,0 +1,18 @@
+{
+    "name": "web-try-monorepo",
+    "private": true,
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "dev:saleOff": "pnpm --filter saleoff run dev --open",
+        "dev:stately": "pnpm --filter stately run dev --open",
+        "build": "pnpm -r build"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "esbuild"
+        ]
+    }
+}
